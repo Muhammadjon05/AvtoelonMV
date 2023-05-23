@@ -1,0 +1,13 @@
+﻿
+@model AvtoElonData.Dtos.CategoriesDto
+<form enctype="multipart/form-data" asp-controller="Category" asp-action="AddCategory">
+    <div class="form-group>">
+        <label>Name</label>
+        <input name="Name" type="text" class="form-control" placeholder="Name">
+    </div>  
+    <div class="form-group>">
+        <label>ParentId</label>
+        <input name="ParentId" type="text" class="form-control" placeholder="ParentId">
+    </div>
+        <button class="form-control"  type="submit" >Add</button>
+</form>

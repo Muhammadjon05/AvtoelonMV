@@ -1,0 +1,12 @@
+﻿@model AvtoelonData.Entities.User
+
+@{
+    ViewBag.Title = "Profile";
+    Layout = "_Layout";
+}
+<h3>Firstname:@Model.FirstName</h3>
+<h3>Username: @Model.UserName</h3>
+<h3>PhoneNumber:@Model.PhoneNumber</h3>
+<h3>Email: @Model.Email</h3>
+
+<a class="btn btn-primary"  asp-controller="User" asp-action="LogOut">LogOut</a>

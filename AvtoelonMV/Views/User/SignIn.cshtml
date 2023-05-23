@@ -1,0 +1,19 @@
+﻿@model AvtoElonData.Dtos.SignInDTO
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+<h1>Sign In</h1>
+<form class="row g-3" style="width: 400px ; margin: auto" asp-controller="User" asp-action="SignIn" enctype="multipart/form-data" method="post">
+    <div>
+        <input  name="UserName" class="form-control" asp-for="UserName" type="text" placeholder="UserName"/>
+        <span asp-validation-for="UserName"></span>
+    </div>
+    <div>
+        <input  name="Password" class="form-control" asp-for="Password" type="password" placeholder="Password"/>
+        <span asp-validation-for="Password"></span>
+    </div>
+    <button class="form-control" type="submit" >Sign In</button>
+    <a class="link-info" asp-controller="User" asp-action="SignUp">Sign Up</a>
+</form>

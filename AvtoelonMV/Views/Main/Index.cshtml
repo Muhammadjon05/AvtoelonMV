@@ -1,0 +1,24 @@
+﻿@model List<AvtoElonData.Models.Products>
+
+@{
+    ViewBag.Title = "Elonlar";
+    Layout = "_Layout";
+}
+<div class="row col-lg-12 col-md-12 col-sm-12 gap-3 d-flex justify-content-center" style="height:50px">
+    @foreach (var announcement in Model)
+    {
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="@announcement.PhotoUrl" alt="Card image cap">
+            <div class="card-body">
+                <h3 class="card-title">@announcement.Marka</h3>
+                <p class="card-text">@announcement.Description</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Price:<strong>@announcement.Price</strong></li>
+                <li class="list-group-item">Location:@announcement.Region</li>
+                <li class="list-group-item">Color:@announcement.Color</li>
+                <li class="list-group-item">Distance:@announcement.Distance</li>
+            </ul>
+        </div>
+    }
+</div>

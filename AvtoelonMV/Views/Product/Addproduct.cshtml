@@ -1,0 +1,53 @@
+﻿@using AvtoElonData.Dtos
+
+@model ProductDto 
+<h3>Addproduct</h3>
+<form enctype="multipart/form-data" asp-controller="Product" asp-action="Addproduct">
+    <div class="form-group>">
+        <label >Marka</label>
+        <input name="Marka" type="text" class="form-control" placeholder="Marka">
+    </div>
+    <div class="form-group">
+        <label >Description </label>
+        <input type="text" class="form-control" placeholder="Description" name="Description" >
+    </div>     
+    <div class="form-group">
+        <label >Distance </label>
+        <input type="text" class="form-control" placeholder="Distance" name="Distance" >
+    </div>
+    <div class="form-group">
+        <label >Region </label>
+        <input type="text" class="form-control" placeholder="Region" name="Region" >
+    </div>    
+    <div class="form-group">
+        <label >District </label>
+        <input type="text" class="form-control" placeholder="District" name="District" >
+    </div>   
+    <div class="form-group">
+        <label >Price </label>
+        <input type="text" class="form-control" placeholder="Price" name="Price" >
+    </div>  
+    <div class="form-group">
+        <label >Color </label>
+        <input type="text" class="form-control" placeholder="Color" name="Color" >
+    </div>    
+    <div class="form-group">
+        <label >Created Date</label>
+        <input type="date" class="form-control" placeholder= "Date" name="CreatedDate" >
+    </div>  
+    <div class="form-group">
+        <label >OilType</label>
+        <input type="text" class="form-control" placeholder="OilType" name="OilType" >
+    </div>  
+    <div class="form-group">
+        <label >Phone Number</label>
+        <input type="text" class="form-control" placeholder="PhoneNumber" name="PhoneNumber" >
+    </div>
+    <div class="form-group">
+        <label >Photo</label>
+        <input class="form-control" placeholder="Photo" type="file" name="Photo"/>
+    </div>
+    <div>    
+        <button class="form-control"  type="submit" >Qoshish</button>
+    </div>
+</form>
